@@ -1,0 +1,47 @@
+.login-container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    gap: 1rem;
+}
+
+.login-container .login{
+    width: 100%;
+    margin: auto;
+}
+
+.mybtn{
+    width: 100%;
+}
+
+.login-img img{
+    width: 150px;
+}
+
+.login-info{
+    width: 100%;
+}
+
+
+@media screen and (min-width: 800px){
+    .login-container{
+        flex-direction: row;
+    }
+
+    .login-img{
+        flex: 1;
+    }
+
+    .login-info{
+        flex: 1;
+    }
+
+    .login-img img{
+        width: auto;
+    }
+}

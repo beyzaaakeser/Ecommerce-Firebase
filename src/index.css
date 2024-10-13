@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+
+
+    &::-webkit-scrollbar {
+        background: transparent;
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #f57224;
+        border-radius: 10px;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input {
+    padding: 10px !important;
+}
+
+input:focus {
+    border-color: gray !important;
+    box-shadow: none !important;
+}
+
+.add-products-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.product-file {
+    width: 100%;
+    height: 45px;
+    flex: 2;
+    overflow: hidden;
+}
+
+.add-button {
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    flex: 1;
+}
+
+.product-file:hover {
+    background-color: #e5e6e6;
+    border-radius: 7px;
+}
+
+.add-products {
+    width: 100%;
+    max-width: 768px;
+    height: auto;
+    border: 1px solid #c1c0c0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    background-color: #f5f6f6;
+}
+
+.cashoutContainer {
+    max-width: 768px;
+    padding-top: 10px;
+    min-height: 70vh;
+}
+
+.cashoutContainer form label {
+    margin-left: 5px;
+}
+
+.cashoutContainer form input {
+    margin-bottom: 15px;
+}
+
+.notFound{
+    min-height: 70vh;
+}
+
+@media screen and (max-width: 800px) {
+    .add-button {
+        width: 100%;
+
+    }
+}
