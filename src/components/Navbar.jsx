@@ -21,8 +21,9 @@ const Navbar = ({user}) => {
     return (
         <div className="navbox">
             <div className='leftside'>
-                <Link to='/'>
+                <Link to='/' className=' d-flex align-items-center gap-3'>
                     <img width={50} src="/ecommerce.svg" alt=""/>
+                    <h1 className='p-0 m-0'>Firebase Ecommerce</h1>
                 </Link>
             </div>
             {
